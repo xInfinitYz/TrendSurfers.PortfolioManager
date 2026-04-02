@@ -1,0 +1,54 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea to make TrendSurfers Portfolio Manager better? Describe it below.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the limitation or friction you're experiencing today.
+      placeholder: Currently I have to manually do X every time I want to Y, which is tedious because…
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the feature or change you'd like to see.
+      placeholder: It would be great if the app could automatically do X when Y happens.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any workarounds you use today, or other approaches you thought about.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area of the app is this related to?
+      options:
+        - Portfolio / Workspace management
+        - Backtest import & parsing
+        - Strategy / EA configuration
+        - Reporting & metrics
+        - Auto-update / Installation
+        - Performance
+        - UI / UX
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Mockups, screenshots, links to similar features in other tools, etc.

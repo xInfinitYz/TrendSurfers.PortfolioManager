@@ -1,0 +1,75 @@
+name: Crash / Freeze Report
+description: The app crashed, hung, or became unresponsive
+labels: ["bug", "crash"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template when the app closes unexpectedly, stops responding, or throws an unhandled exception dialog.
+
+  - type: input
+    id: version
+    attributes:
+      label: App Version
+      placeholder: "1.0.1"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Windows Version
+      placeholder: "Windows 11 23H2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: crash_type
+    attributes:
+      label: Type of failure
+      options:
+        - App closed silently (no error)
+        - Unhandled exception dialog appeared
+        - App froze / became unresponsive
+        - Auto-update triggered crash
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: What were you doing when it crashed?
+      description: List the exact steps leading up to the failure.
+      placeholder: |
+        1. Opened the app
+        2. Loaded a portfolio file
+        3. Clicked "Run Backtest"
+        4. App closed immediately
+    validations:
+      required: true
+
+  - type: input
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      placeholder: "Every time / Intermittently / Once"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log file contents
+      description: |
+        Logs are in `%LOCALAPPDATA%\TS.PortfolioManager\logs\`.
+        Paste the tail of the log file from around the time of the crash.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Error dialogs, screenshots, Windows Event Viewer entries, etc.
