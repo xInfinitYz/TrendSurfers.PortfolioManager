@@ -8,7 +8,7 @@
 
 **TrendSurfers Portfolio Manager** is a Windows desktop app designed for systematic MT5 traders who run multiple Expert Advisors (EAs). Instead of managing each strategy in isolation, the app helps you combine them into a single balanced portfolio — with equalized drawdowns, correct lot sizing, and calibration to your exact risk tolerance.
 
-The result: a set of ready-to-deploy `.set` files where every strategy contributes equally to the portfolio's risk, and the total drawdown stays within your defined target — saved as a portable `.tspa` portfolio artifact you can reuse and share.
+The result: a set of ready-to-deploy `.set` files where every strategy contributes equally to the portfolio's risk, and the total drawdown stays within your defined target.
 
 ---
 
@@ -24,7 +24,7 @@ A guided 5-step process from raw strategies to a deployable portfolio:
 | **Strategies Balancer** | Scale lots to equalize max drawdown across all strategies |
 | **Calibration** | Compute `LotSizeStep` for each strategy to hit a target DD% on any account size |
 | **Validation** | Run confirmation backtests to verify calibration is correct |
-| **Export** | Package everything into a `.tspa` artifact with calibrated `.set` files |
+| **Export** | Package calibrated `.set` files and all backtest reports |
 
 ### 📊 Portfolio Calculator
 - Load MT5 HTML backtest reports or `.set` files
@@ -41,9 +41,6 @@ Batch backtest queue with:
 - Multiple date ranges per strategy
 - Persistent queue state (survives app restarts)
 - Cooldown management to keep MT5 stable
-
-### 📦 Artifact Explorer
-Browse, validate, and extract previously saved `.tspa` portfolio artifacts — your portfolio snapshots, versioned and portable.
 
 ---
 
