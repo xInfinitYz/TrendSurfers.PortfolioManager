@@ -1,6 +1,6 @@
 # TrendSurfers Portfolio Manager
 
-> A professional desktop application for MetaTrader 5 traders — build, calibrate, and deploy risk-optimized multi-strategy portfolios.
+> A professional desktop application for MetaTrader 5 traders — build, calibrate, and deploy risk-optimized multi-strategy portfolios. **Now with parallel MT5 backtesting via subworker terminals (v3.0.0).**
 
 ---
 
@@ -13,6 +13,16 @@ The result: a set of ready-to-deploy `.set` files where every strategy contribut
 ---
 
 ## Screenshots
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/xInfinitYz/TrendSurfers.PortfolioManager/main/pictures/subworkers.png" alt="MT5 Subworkers — parallel backtesting" width="720"/>
+  <br/><em>MT5 Subworkers — run multiple backtests in parallel across isolated terminal copies</em>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/xInfinitYz/TrendSurfers.PortfolioManager/main/pictures/subworkers_2.png" alt="Workers panel — live status and resource sizing" width="720"/>
+  <br/><em>Workers panel — live status, smart resource sizing, and per-strategy elapsed timers</em>
+</p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/xInfinitYz/TrendSurfers.PortfolioManager/main/pictures/home.png" alt="Home Dashboard" width="720"/>
@@ -37,6 +47,13 @@ The result: a set of ready-to-deploy `.set` files where every strategy contribut
 ---
 
 ## Core Features
+
+### 🚀 MT5 Subworkers — Parallel Backtesting (NEW in v3.0.0)
+- Spawn multiple isolated subworker copies of your master MT5 terminal to run backtests in parallel.
+- Smart resource sizing: subworker count auto-scales to your CPU, RAM, and disk capacity.
+- Reserved RAM percentage slider keeps the host system responsive while runs are in flight.
+- Master-first warm-up: identical date-range / symbol / tick-model combinations are computed once and reused — no repeat work.
+- Live Workers pill in both the Portfolio Builder wizard and Backtester Queue, with per-strategy elapsed timers and per-row Retry on failure.
 
 ### 🧙 Portfolio Builder Wizard
 A guided 5-step process from raw strategies to a deployable portfolio:
@@ -65,6 +82,7 @@ Batch backtest queue with:
 - Multiple date ranges per strategy
 - Persistent queue state (survives app restarts)
 - Cooldown management to keep MT5 stable
+- Parallel execution via MT5 Subworkers (see above)
 
 ---
 
@@ -128,6 +146,8 @@ Lots = floor(AccountBalance / LotSizeStep) × 0.01
 1. Download the latest `TS.PortfolioManager-win-Setup.exe` from [Releases](../../releases)
 2. Run the installer — no admin rights required
 3. The app auto-updates in the background on future launches
+
+> ℹ️ Existing installations will be notified of the v3.0.0 upgrade through the new in-app Update Banner.
 
 ---
 
