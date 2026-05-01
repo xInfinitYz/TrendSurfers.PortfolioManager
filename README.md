@@ -15,8 +15,8 @@ The result: a set of ready-to-deploy `.set` files where every strategy contribut
 ## Screenshots
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xInfinitYz/TrendSurfers.PortfolioManager/main/pictures/subworkers.png" alt="MT5 Subworkers — parallel backtesting" width="720"/>
-  <br/><em>MT5 Subworkers — run multiple backtests in parallel across isolated terminal copies</em>
+  <img src="https://raw.githubusercontent.com/xInfinitYz/TrendSurfers.PortfolioManager/main/pictures/product.png" alt="Portfolio Manager" width="720"/>
+  <br/><em>Portfolio Manager — parallel MT5 backtesting, calibrated portfolios, smarter decisions</em>
 </p>
 
 <p align="center">
