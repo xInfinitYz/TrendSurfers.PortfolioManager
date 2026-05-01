@@ -44,6 +44,11 @@ The result: a set of ready-to-deploy `.set` files where every strategy contribut
   <br/><em>Portfolio Wizard — Statistics: portfolio-level Sharpe, profit factor, and correlation matrix</em>
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/xInfinitYz/TrendSurfers.PortfolioManager/main/pictures/strategies-balancer.png" alt="Strategies Balancer" width="720"/>
+  <br/><em>Strategies Balancer — equalise max drawdown across all strategies at your target DD%</em>
+</p>
+
 ---
 
 ## Core Features
