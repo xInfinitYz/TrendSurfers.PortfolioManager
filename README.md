@@ -174,6 +174,16 @@ Lots = floor(AccountBalance / LotSizeStep) × 0.01
 
 This software is proprietary. Licenses are available for purchase with a 30-day money-back guarantee. Visit [trendsurfers.io](https://trendsurfers.io/) for pricing and licensing details.
 
+**By downloading, installing, or using this software you agree to the [End User License Agreement](https://trendsurfers.io/eula/).** If you do not accept the EULA, do not install or use the software.
+
+| Legal document | Link |
+|---------------|------|
+| End User License Agreement (EULA) | [trendsurfers.io/eula/](https://trendsurfers.io/eula/) |
+| Privacy Policy | [trendsurfers.io/privacy/](https://trendsurfers.io/privacy/) |
+| Cookie Policy | [trendsurfers.io/cookies/](https://trendsurfers.io/cookies/) |
+| Legal Notice (Aviso Legal) | [trendsurfers.io/legal/](https://trendsurfers.io/legal/) |
+| Trademark Notices | [trendsurfers.io/legal/#trademarks](https://trendsurfers.io/legal/#trademarks) |
+
 ---
 
 ## Legal Notices
