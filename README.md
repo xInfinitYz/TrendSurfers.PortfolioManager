@@ -2,6 +2,8 @@
 
 > A professional desktop application for MetaTrader 5 traders — build, calibrate, and deploy risk-optimized multi-strategy portfolios. **Now with parallel MT5 backtesting via subworker terminals (v3.0.0).**
 
+**Website:** [trendsurfers.io](https://trendsurfers.io/)
+
 ---
 
 ## What Is It?
@@ -156,6 +158,46 @@ Lots = floor(AccountBalance / LotSizeStep) × 0.01
 
 ---
 
+## Contact & Community
+
+| Channel | Link |
+|---------|------|
+| Website | [trendsurfers.io](https://trendsurfers.io/) |
+| Discord | [discord.gg/3HnQDZ5hT5](https://discord.gg/3HnQDZ5hT5) |
+| Telegram | [Community group](https://t.me/+GyaH3OhxW802N2I0) |
+| General / Support | [hello@trendsurfers.io](mailto:hello@trendsurfers.io) |
+| Legal | [legal@trendsurfers.io](mailto:legal@trendsurfers.io) |
+
+---
+
 ## License
 
-This software is proprietary. A 30-day trial is included. Contact [TrendSurfers](https://github.com/xInfinitYz) for a license key.
+This software is proprietary. Licenses are available for purchase with a 30-day money-back guarantee. Visit [trendsurfers.io](https://trendsurfers.io/) for pricing and licensing details.
+
+---
+
+## Legal Notices
+
+### Trademark Disclaimers
+
+**TrendSurfers Portfolio Manager** is an independent product developed by **INFINITYDEV, S.L.** (NIF B-44974798, Plaça Jardí Enric Morera 2, Bajos, 17600 Figueres, Girona, Spain).
+
+INFINITYDEV, S.L. is **not** affiliated with, endorsed by, sponsored by, certified by, or otherwise connected to MetaQuotes Software Corp., MetaQuotes Ltd., or any of their affiliated entities. This product is not approved by MetaQuotes, and MetaQuotes provides no warranty, support, or representation regarding it.
+
+"MetaTrader", "MetaTrader 4", "MetaTrader 5", "MT4", "MT5", "MQL4", and "MQL5" are registered trademarks of MetaQuotes Software Corp. and/or its affiliated entities. All other product names, trademarks, service marks, and registered trademarks referenced in this software or its accompanying materials are the property of their respective owners and are used solely for identification and descriptive purposes. Such use does not imply endorsement, sponsorship, or any affiliation between INFINITYDEV, S.L. and the trademark holders.
+
+### Trading Risk Disclaimer
+
+**This software is a research and portfolio-construction tool. It is not a trading signal service, a robo-advisor, an automated execution engine, an investment recommendation system, or a financial-advice product.** It does not place trades, does not connect to live broker accounts to execute orders, and does not represent that any output will be profitable or suitable for live deployment.
+
+All outputs — including backtest results, calibration parameters, lot-sizing values, set files, portfolio artifacts, drawdown estimates, and risk metrics — are **research outputs** intended for the user's own evaluation. They are not trading recommendations, signals, advice, instructions, or directions to act.
+
+**Past performance, backtest performance, and simulated performance are not indicative of future results.** All decisions to deploy, modify, or trade any portfolio derived from the software's outputs are made solely by the user, at the user's risk, and with the user's full responsibility for any resulting financial outcome.
+
+Nothing in this software, including any documentation, marketing materials, or in-app text, constitutes investment advice, financial advice, tax advice, or legal advice. Consult qualified professional advisors before making any financial decisions.
+
+### Platform Dependency Notice
+
+This software is designed to interoperate with MetaTrader 5 and depends on specific MT5 capabilities for its operation (including CLI backtest invocation, terminal automation, set-file formats, and strategy-tester output). MetaQuotes Software Corp. is an independent third party over which INFINITYDEV, S.L. has no control. MetaQuotes may, at any time, modify, restrict, deprecate, or remove any MT5 capability. Such changes may cause parts or all of this software to stop functioning. This does not constitute a defect in the software, and INFINITYDEV, S.L. assumes no responsibility for changes made by MetaQuotes or any other third-party platform.
+
+&copy; 2024–2026 INFINITYDEV, S.L. All rights reserved.
