@@ -1,0 +1,119 @@
+name: Planned Feature
+description: Track a feature being planned, built, or recently released (visible to stakeholders)
+title: "[Feature] "
+labels: ["roadmap"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to describe a feature the team is **planning, building, or releasing**.
+
+        Write for **stakeholders, traders, and product sponsors**. Focus on what the feature delivers and why it matters — not how it's built. Avoid technical terms (no APIs, schemas, refactors, modules).
+
+  - type: input
+    id: feature_name
+    attributes:
+      label: Feature name
+      description: A short, plain-English name. No internal codenames.
+      placeholder: e.g. Multi-account performance dashboard
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What this delivers
+      description: One or two sentences describing what users will be able to do once this ships.
+      placeholder: Traders will be able to compare performance across all linked accounts on a single dashboard, filtered by symbol and date range.
+    validations:
+      required: true
+
+  - type: textarea
+    id: beneficiary
+    attributes:
+      label: Who benefits
+      description: Who is this for, and what does it unlock for them?
+      placeholder: Traders managing more than one MT5 account, who today switch between terminals to compare results.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem it solves
+      description: What is painful, slow, or impossible today that this fixes?
+      placeholder: Today, comparing performance across accounts means exporting reports from each terminal manually — a 15-minute task done weekly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: success
+    attributes:
+      label: What success looks like
+      description: How will we know this delivered value? Use observable, plain-language outcomes — not technical checks.
+      placeholder: |
+        - Performance for any account is visible in one click from the dashboard.
+        - Comparing two accounts takes under 30 seconds.
+        - Filters persist across app restarts.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: Where is this in the delivery lifecycle?
+      options:
+        - Proposed
+        - Planned
+        - In Progress
+        - In Review
+        - Released
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this relative to other planned work?
+      options:
+        - Must Have — blocks an important workflow today
+        - Should Have — significant value, can wait briefly
+        - Could Have — nice improvement when capacity allows
+      default: 1
+    validations:
+      required: true
+
+  - type: input
+    id: timeframe
+    attributes:
+      label: Target timeframe
+      description: When do we aim to release this? Use a month or quarter (or "TBD").
+      placeholder: e.g. Q3 2026, June 2026, TBD
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area of the app does this affect?
+      options:
+        - Portfolio / Workspace management
+        - Backtest import & parsing
+        - Strategy / EA configuration
+        - Reporting & metrics
+        - Auto-update / Installation
+        - Performance
+        - UI / UX
+        - Multiple areas
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional notes
+      description: Mockups, screenshots, related requests, or anything else useful for stakeholders. Leave blank if not applicable.
